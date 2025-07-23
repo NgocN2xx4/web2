@@ -9,12 +9,12 @@
                   <img src="themes/admin/assets/images/dashboard/Group126@2x.png" class="gradient-corona-img img-fluid" alt="">
                 </div>
                 <div class="col-5 col-sm-7 col-xl-8 p-0">
-                  <h4 class="mb-1 mb-sm-0">Want even more features?</h4>
-                  <p class="mb-0 font-weight-normal d-none d-sm-block">Check out our Pro version with 5 unique layouts!</p>
+                  <h4 class="mb-1 mb-sm-0">Muốn có thêm nhiều tính năng?</h4>
+                  <p class="mb-0 font-weight-normal d-none d-sm-block">Khám phá phiên bản Pro với 5 giao diện độc đáo!</p>
                 </div>
                 <div class="col-3 col-sm-2 col-xl-2 pl-0 text-center">
                   <span>
-                    <a href="https://myporfolio-434bc.firebaseapp.com" target="_blank" class="btn btn-outline-light btn-rounded get-started-btn">Upgrade to PRO</a>
+                    <a href="https://myporfolio-434bc.firebaseapp.com" target="_blank" class="btn btn-outline-light btn-rounded get-started-btn">Nâng cấp lên PRO</a>
                   </span>
                 </div>
               </div>
@@ -29,7 +29,7 @@
               <div class="row">
                 <div class="col-9">
                   <div class="d-flex align-items-center align-self-start">
-                    <h3 class="mb-0"><%= products.length%></h3>
+                    <h3 class="mb-0"><%= products.length %></h3>
                     <p class="text-success ml-2 mb-0 font-weight-medium">+3.5%</p>
                   </div>
                 </div>
@@ -39,7 +39,7 @@
                   </div>
                 </div>
               </div>
-              <h6 class="text-muted font-weight-normal">Total Products</h6>
+              <h6 class="text-muted font-weight-normal">Tổng Sản Phẩm</h6>
             </div>
           </div>
         </div>
@@ -49,7 +49,7 @@
               <div class="row">
                 <div class="col-9">
                   <div class="d-flex align-items-center align-self-start">
-                    <h3 class="mb-0"><%= orders.length%></h3>
+                    <h3 class="mb-0"><%= orders.length %></h3>
                     <p class="text-success ml-2 mb-0 font-weight-medium">+11%</p>
                   </div>
                 </div>
@@ -59,7 +59,7 @@
                   </div>
                 </div>
               </div>
-              <h6 class="text-muted font-weight-normal">Total Orders</h6>
+              <h6 class="text-muted font-weight-normal">Tổng Đơn Hàng</h6>
             </div>
           </div>
         </div>
@@ -69,7 +69,7 @@
               <div class="row">
                 <div class="col-9">
                   <div class="d-flex align-items-center align-self-start">
-                    <h3 class="mb-0"><%= users.length%></h3>
+                    <h3 class="mb-0"><%= users.length %></h3>
                     <p class="text-danger ml-2 mb-0 font-weight-medium">-2.4%</p>
                   </div>
                 </div>
@@ -79,7 +79,7 @@
                   </div>
                 </div>
               </div>
-              <h6 class="text-muted font-weight-normal">Total Customers</h6>
+              <h6 class="text-muted font-weight-normal">Tổng Khách Hàng</h6>
             </div>
           </div>
         </div>
@@ -99,7 +99,7 @@
                   </div>
                 </div>
               </div>
-              <h6 class="text-muted font-weight-normal">Total Feedback</h6>
+              <h6 class="text-muted font-weight-normal">Tổng Phản Hồi</h6>
             </div>
           </div>
         </div>
@@ -108,14 +108,14 @@
         <div class="col-sm-4 grid-margin">
           <div class="card">
             <div class="card-body">
-              <h5>Revenue</h5>
+              <h5>Doanh Thu</h5>
               <div class="row">
                 <div class="col-8 col-sm-12 col-xl-8 my-auto">
                   <div class="d-flex d-sm-block d-md-flex align-items-center">
-                    <h2 class="mb-0"><%= total_revenue%></h2>
+                    <h2 class="mb-0"><%= (total_revenue * 23000).toLocaleString('vi-VN') %> ₫</h2>
                     <p class="text-success ml-2 mb-0 font-weight-medium">+3.5%</p>
                   </div>
-                  <h6 class="text-muted font-weight-normal">11.38% Since last month</h6>
+                  <h6 class="text-muted font-weight-normal">11.38% So với tháng trước</h6>
                 </div>
                 <div class="col-4 col-sm-12 col-xl-4 text-center text-xl-right">
                   <i class="icon-lg mdi mdi-codepen text-primary ml-auto"></i>
@@ -127,14 +127,14 @@
         <div class="col-sm-4 grid-margin">
           <div class="card">
             <div class="card-body">
-              <h5>Sales</h5>
+              <h5>Doanh Số</h5>
               <div class="row">
                 <div class="col-8 col-sm-12 col-xl-8 my-auto">
                   <div class="d-flex d-sm-block d-md-flex align-items-center">
-                    <h2 class="mb-0">$<%= discount%></h2>
+                    <h2 class="mb-0"><%= (discount * 23000).toLocaleString('vi-VN') %> ₫</h2>
                     <p class="text-success ml-2 mb-0 font-weight-medium">+8.3%</p>
                   </div>
-                  <h6 class="text-muted font-weight-normal"> 9.61% Since last month</h6>
+                  <h6 class="text-muted font-weight-normal">9.61% So với tháng trước</h6>
                 </div>
                 <div class="col-4 col-sm-12 col-xl-4 text-center text-xl-right">
                   <i class="icon-lg mdi mdi-wallet-travel text-danger ml-auto"></i>
@@ -146,14 +146,14 @@
         <div class="col-sm-4 grid-margin">
           <div class="card">
             <div class="card-body">
-              <h5>Selling Price</h5>
+              <h5>Giá Bán</h5>
               <div class="row">
                 <div class="col-8 col-sm-12 col-xl-8 my-auto">
                   <div class="d-flex d-sm-block d-md-flex align-items-center">
-                    <h2 class="mb-0">$<%= price%></h2>
-                    <p class="text-danger ml-2 mb-0 font-weight-medium">-2.1% </p>
+                    <h2 class="mb-0"><%= (price * 23000).toLocaleString('vi-VN') %> ₫</h2>
+                    <p class="text-danger ml-2 mb-0 font-weight-medium">-2.1%</p>
                   </div>
-                  <h6 class="text-muted font-weight-normal">2.27% Since last month</h6>
+                  <h6 class="text-muted font-weight-normal">2.27% So với tháng trước</h6>
                 </div>
                 <div class="col-4 col-sm-12 col-xl-4 text-center text-xl-right">
                   <i class="icon-lg mdi mdi-monitor text-success ml-auto"></i>
@@ -167,7 +167,7 @@
         <div class="col-12 grid-margin">
           <div class="card">
             <div class="card-body">
-              <h4 class="card-title">Trạng thái đơn hàng</h4>
+              <h4 class="card-title">Trạng Thái Đơn Hàng</h4>
               <div class="table-responsive">
                 <table class="table">
                   <thead>
@@ -179,18 +179,18 @@
                           </label>
                         </div>
                       </th>
-                      <th> Client Name </th>
-                      <th> Order No </th>
-                      <th> Product Cost </th>
-                      <th> Payment Mode  </th>
-                      <th> Delivery Mode </th>
-                      <th> Start Date </th>
-                      <th> Payment Status </th>
+                      <th>Tên Khách Hàng</th>
+                      <th>Mã Đơn Hàng</th>
+                      <th>Chi Phí Sản Phẩm</th>
+                      <th>Hình Thức Thanh Toán</th>
+                      <th>Hình Thức Giao Hàng</th>
+                      <th>Ngày Bắt Đầu</th>
+                      <th>Trạng Thái Thanh Toán</th>
                     </tr>
                   </thead>
                   <tbody>
-                  <%for(var item of order_items){%>
-                  <tr>
+                  <% for(var item of order_items) { %>
+                    <tr>
                       <td>
                         <div class="form-check form-check-muted m-0">
                           <label class="form-check-label">
@@ -204,26 +204,26 @@
                           <span class="pl-2">
                             <%= item.user_id.name %>
                           </span>
-                          <% } else { %>
-                            <span class="pl-2 text-danger">Unknown User</span>
-                            <% } %>                 
+                        <% } else { %>
+                          <span class="pl-2 text-danger">Khách Hàng Không Xác Định</span>
+                        <% } %>                 
                       </td>
-                      <td> 02312 </td>
-                      <td>$<%= (item.total_money/23000).toFixed(2)%></td>
-                      <td> <%= item.payment_status%></td>
-                      <td> <%= item.delivery_status%> </td>
-                      <td> <%= formatDate(item.created_at)%> </td>
+                      <td>02312</td>
+                      <td><%= item.total_money.toLocaleString('vi-VN') %> ₫</td>
+                      <td><%= item.payment_status %></td>
+                      <td><%= item.delivery_status %></td>
+                      <td><%= formatDate(item.created_at) %></td>
                       <td>
-                        <% if(item.delivery_status =='processing') {%>
-                        <div class="badge badge-outline-success">Approved</div>
-                        <% } else if(item.delivery_status =='Delivered') {%>
-                        <div class="badge badge-outline-primary">Delivered</div>
-                        <%}else{%>
-                        <div class="badge badge-outline-danger">Cancelled</div>
-                        <%}%>
+                        <% if(item.delivery_status == 'processing') { %>
+                          <div class="badge badge-outline-success">Đã Xác Nhận</div>
+                        <% } else if(item.delivery_status == 'Delivered') { %>
+                          <div class="badge badge-outline-primary">Đã Giao</div>
+                        <% } else { %>
+                          <div class="badge badge-outline-danger">Đã Hủy</div>
+                        <% } %>
                       </td>
                     </tr>
-                    <%}%>
+                  <% } %>
                   </tbody>
                 </table>
               </div>
@@ -236,14 +236,14 @@
           <div class="card">
             <div class="card-body">
               <div class="d-flex flex-row justify-content-between">
-                <h4 class="card-title">Messages</h4>
-                <p class="text-muted mb-1 small">View all</p>
+                <h4 class="card-title">Tin Nhắn</h4>
+                <p class="text-muted mb-1 small">Xem tất cả</p>
               </div>
               <div class="preview-list">
                 <div class="preview-item border-bottom">
                   <div class="preview-item-content d-flex flex-grow">
                     <div class="flex-grow">
-                      <h6 class="preview-subject">No messages</h6>
+                      <h6 class="preview-subject">Không có tin nhắn</h6>
                     </div>
                   </div>
                 </div>
@@ -254,7 +254,7 @@
         <div class="col-md-6 col-xl-4 grid-margin stretch-card">
           <div class="card">
             <div class="card-body">
-              <h4 class="card-title">Portfolio Slide</h4>
+              <h4 class="card-title">Hình Ảnh Hồ Sơ</h4>
               <div class="owl-carousel owl-theme full-width owl-carousel-dash portfolio-carousel" id="owl-carousel-basic">
                 <div class="item">
                   <img src="../../themes/admin/assets/images/dashboard/Rectangle.jpg" alt="">
@@ -275,7 +275,7 @@
                     <div class="preview-item-content d-flex flex-grow">
                       <div class="flex-grow">
                         <div class="d-flex d-md-block d-xl-flex justify-content-between">
-                          <h6 class="preview-subject">Ngoc Nguyen</h6>
+                          <h6 class="preview-subject">Ngọc Nguyễn</h6>
                           <p class="text-muted text-small">4 giờ trước</p>
                         </div>
                         <p class="text-muted">Hoạt động bình thường.</p>
@@ -284,7 +284,7 @@
                   </div>
                 </div>
               </div>
-              <p class="text-muted">Hoạt động bình thường. </p>
+              <p class="text-muted">Hoạt động bình thường.</p>
               <div class="progress progress-md portfolio-progress">
                 <div class="progress-bar bg-success" role="progressbar" style="width: 50%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
               </div>
@@ -294,45 +294,45 @@
         <div class="col-md-12 col-xl-4 grid-margin stretch-card">
           <div class="card">
             <div class="card-body">
-              <h4 class="card-title">To do list</h4>
+              <h4 class="card-title">Danh Sách Công Việc</h4>
               <div class="add-items d-flex">
-                <input type="text" class="form-control todo-list-input" placeholder="enter task..">
-                <button class="add btn btn-primary todo-list-add-btn">Add</button>
+                <input type="text" class="form-control todo-list-input" placeholder="Nhập công việc...">
+                <button class="add btn btn-primary todo-list-add-btn">Thêm</button>
               </div>
               <div class="list-wrapper">
                 <ul class="d-flex flex-column-reverse text-white todo-list todo-list-custom">
                   <li>
                     <div class="form-check form-check-primary">
                       <label class="form-check-label">
-                        <input class="checkbox" type="checkbox"> Create invoice </label>
+                        <input class="checkbox" type="checkbox"> Tạo hóa đơn </label>
                     </div>
                     <i class="remove mdi mdi-close-box"></i>
                   </li>
                   <li>
                     <div class="form-check form-check-primary">
                       <label class="form-check-label">
-                        <input class="checkbox" type="checkbox"> Meeting with Alita </label>
+                        <input class="checkbox" type="checkbox"> Gặp gỡ Phạm Nhật Vượng </label>
                     </div>
                     <i class="remove mdi mdi-close-box"></i>
                   </li>
                   <li class="completed">
                     <div class="form-check form-check-primary">
                       <label class="form-check-label">
-                        <input class="checkbox" type="checkbox" checked> Prepare for presentation </label>
+                        <input class="checkbox" type="checkbox" checked> Giao hàng đơn 0987654321 </label>
                     </div>
                     <i class="remove mdi mdi-close-box"></i>
                   </li>
                   <li>
                     <div class="form-check form-check-primary">
                       <label class="form-check-label">
-                        <input class="checkbox" type="checkbox"> Plan weekend outing </label>
+                        <input class="checkbox" type="checkbox"> Giao hàng đơn 0987654321 </label>
                     </div>
                     <i class="remove mdi mdi-close-box"></i>
                   </li>
                   <li>
                     <div class="form-check form-check-primary">
                       <label class="form-check-label">
-                        <input class="checkbox" type="checkbox"> Pick up kids from school </label>
+                        <input class="checkbox" type="checkbox"> Giao hàng đơn 0397297919 </label>
                     </div>
                     <i class="remove mdi mdi-close-box"></i>
                   </li>
@@ -346,7 +346,7 @@
         <div class="col-12">
           <div class="card">
             <div class="card-body">
-              <h4 class="card-title">Visitors by Countries</h4>
+              <h4 class="card-title">Khách Truy Cập Theo Quốc Gia</h4>
               <div class="row">
                 <div class="col-md-5">
                   <div class="table-responsive">
@@ -356,7 +356,7 @@
                           <td>
                             <i class="flag-icon flag-icon-vn"></i>
                           </td>
-                          <td>VietNam</td>
+                          <td>Việt Nam</td>
                           <td class="text-right"> 1500 </td>
                           <td class="text-right font-weight-medium"> 56.35% </td>
                         </tr>
@@ -364,16 +364,15 @@
                           <td>
                             <i class="flag-icon flag-icon-gb"></i>
                           </td>
-                          <td>United Kingdom</td>
+                          <td>Vương Quốc Anh</td>
                           <td class="text-right"> 450 </td>
                           <td class="text-right font-weight-medium"> 25.00% </td>
                         </tr>
                         <tr>
-                        <tr>
                           <td>
                             <i class="flag-icon flag-icon-de"></i>
                           </td>
-                          <td>Germany</td>
+                          <td>Đức</td>
                           <td class="text-right"> 800 </td>
                           <td class="text-right font-weight-medium"> 33.25% </td>
                         </tr>
@@ -381,10 +380,11 @@
                           <td>
                             <i class="flag-icon flag-icon-au"></i>
                           </td>
-                          <td>Australia</td>
+                          <td>Úc</td>
                           <td class="text-right"> 760 </td>
                           <td class="text-right font-weight-medium"> 15.45% </td>
                         </tr>
+                        <tr>
                           <td>
                             <i class="flag-icon flag-icon-ro"></i>
                           </td>
@@ -396,7 +396,7 @@
                           <td>
                             <i class="flag-icon flag-icon-br"></i>
                           </td>
-                          <td>Brasil</td>
+                          <td>Brazil</td>
                           <td class="text-right"> 230 </td>
                           <td class="text-right font-weight-medium"> 75.00% </td>
                         </tr>
@@ -406,7 +406,7 @@
                 </div>
                 <div class="col-md-7">
                   <iframe 
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3724.221758842487!2d105.78815681464577!3d21.023811093323783!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x313454b329f68977%3A0x6ddf5ff1e829fc56!2zxJDhuqFpIEjhu41jIEdyZWVud2ljaCBWaeG7h3QgTmFt!5e0!3m2!1svi!2s!4v1680439684780!5m2!1svi!2s" 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3724.096937109356!2d105.8182135153778!3d21.028811985998073!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ab4f4c0b3b7b%3A0x7f5b297c0b6c0b0b!2s68%20Nguy%E1%BB%85n%20Ch%C3%AD%20Thanh%2C%20L%C3%A1ng%20Th%C6%B0%E1%BB%A3ng%2C%20%C4%90%E1%BB%91ng%20%C4%90a%2C%20H%C3%A0%20N%E1%BB%99%C4%B1%2C%20Vi%E1%BB%87t%20Nam!5e0!3m2!1svi!2s!4v1698765432109!5m2!1svi!2s" 
                     width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
                   </iframe>
                 </div>
@@ -420,8 +420,8 @@
     <!-- partial:partials/_footer.html -->
     <footer class="footer">
       <div class="d-sm-flex justify-content-center justify-content-sm-between">
-        <span class="text-muted d-block text-center text-sm-left d-sm-inline-block">© 2023 All Rights Reserved By longtech</span>
-        <span class="float-none float-sm-right d-block mt-1 mt-sm-0 text-center"> Distributed By <a href="https://myporfolio-434bc.firebaseapp.com/" target="_blank">Duc Long</a></span>
+        <span class="text-muted d-block text-center text-sm-left d-sm-inline-block">© 2023 Bản quyền thuộc về NgocStore</span>
+        <span class="float-none float-sm-right d-block mt-1 mt-sm-0 text-center"> Phân phối bởi <a href="https://myporfolio-434bc.firebaseapp.com/" target="_blank">NgocStore</a></span>
       </div>
     </footer>
     <!-- partial -->
@@ -429,4 +429,3 @@
   <!-- main-panel ends -->
 </div>
 <!-- page-body-wrapper ends -->
-</div>
