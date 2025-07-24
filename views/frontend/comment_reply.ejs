@@ -2,10 +2,108 @@
     <div class="div_center">
         <h2 style="font-size:30px; padding:20px 0;">Bình luận</h2>
         <form action="" method="POST">
-            <textarea name="comment" id="" cols="30" rows="10" placeholder="Comment something here" class="fillComment"
-                required></textarea>
+            <textarea name="comment" id="comment" cols="30" rows="10" placeholder="Comment something here" class="fillComment" required></textarea>
             <br>
-            <input type="submit" value="Comment" disabled>
+            <input type="submit" value="Comment" class="btnComment">
         </form>
     </div>
+
+    <style>
+        .container {
+            max-width: 100%;
+            width: 90%;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .div_center {
+            max-width: 700px;
+            margin: 0 auto;
+            padding: 2rem;
+            background-color: #fff;
+            border-radius: 1rem;
+            box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            font-size: 2rem;
+            font-weight: 700;
+            color: #333;
+            text-align: center;
+            margin-bottom: 1.5rem;
+        }
+
+        .fillComment {
+            width: 100%;
+            min-height: 150px;
+            padding: 1rem;
+            border: 1px solid #e0e0e0;
+            border-radius: 8px;
+            background-color: #f9f9f9;
+            font-size: 1rem;
+            color: #333;
+            resize: vertical;
+            outline: none;
+            transition: border-color 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .fillComment:focus {
+            border-color: #007bff;
+            box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
+        }
+
+        .fillComment::placeholder {
+            color: #999;
+        }
+
+        .btnComment {
+            display: block;
+            width: 100%;
+            padding: 0.75rem;
+            margin-top: 1rem;
+            background-color: #000;
+            color: #fff;
+            border: none;
+            border-radius: 8px;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+
+        .btnComment:hover:not(:disabled) {
+            background-color: #f7444e;
+            transform: translateY(-2px);
+        }
+
+        .btnComment:disabled {
+            background-color: #ccc;
+            cursor: not-allowed;
+        }
+
+        @media (max-width: 767px) {
+            .div_center {
+                padding: 1.5rem;
+            }
+
+            h2 {
+                font-size: 1.75rem;
+            }
+
+            .fillComment {
+                min-height: 120px;
+            }
+        }
+    </style>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const textarea = document.querySelector(".fillComment");
+            const submitButton = document.querySelector(".btnComment");
+
+            textarea.addEventListener("input", function () {
+                submitButton.disabled = textarea.value.trim() === "";
+            });
+        });
+    </script>
 </div>

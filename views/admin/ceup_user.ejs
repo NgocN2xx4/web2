@@ -22,7 +22,7 @@
     <div class="main-panel">
         <div class="content-wrapper">
             <div class="div_center">
-                <h1>Add a new User</h1>
+                <h1>Thêm người dùng mới</h1>
             </div>
             <% if (message) { %>
                 <div class="alert alert-<%= message.type %>">
@@ -34,7 +34,7 @@
                 <div class="col-md-10">
                     <form action="<%= item._id ? '/user/edit/' + item._id : '/user/add'%>" method="post" id="userForm">
                         <div class="form-group">
-                            <label>Full Name: </label>
+                            <label>Tên đầy đủ: </label>
                             <input type="text" name="name" class="form-control" required value="<%= item.name%>">
                         </div>
                         <div class="form-group">
@@ -42,23 +42,23 @@
                             <input type="email" name="email" class="form-control" required value="<%= item.email%>">
                         </div>
                         <div class="form-group">
-                            <label>Phone Number: </label>
+                            <label>Số điện thoại: </label>
                             <input type="tel" name="phone" class="form-control" value="<%= item.phone%>">
                         </div>
                         <div class="form-group">
-                            <label>Address: </label>
+                            <label>Địa chỉ: </label>
                             <input type="text" name="address" class="form-control" value="<%= item.address%>">
                         </div>
                         <div class="form-group">
-                            <label>Password: </label>
+                            <label>Mật khẩu: </label>
                             <input type="password" name="password" class="form-control" id="password" min="8" <%if(item._id != '') {%> '' <%} else{%>required="true"<%}%> >
                         </div>
                         <div class="form-group">
-                            <label>Confirm Password: </label>
+                            <label>Xác nhận mật khẩu: </label>
                             <input type="password" name="password_confirm" class="form-control" id="password-confirm" min="8" <%if(item._id !='') {%> '' <%} else{%>required="true"<%}%>>
                         </div>
                         <div class="form-group">
-                            <label>Role Name: </label>
+                            <label>Vai trò: </label>
                             <select class="form-control" required name="usertype" style="color:#fff;">
                                 <%if(item.usertype === 'Admin'){%>
                                     <option >User</option>
@@ -75,8 +75,8 @@
                             </select>
                         </div>
                         <div class="form-group">
-                            <input type="submit" class="btn btn-info btnSave" value="Save User">
-                            <a href="/user">Back to list</a>
+                            <input type="submit" class="btn btn-info btnSave" value="Lưu người dùng">
+                            <a href="/user">Quay lại danh sách</a>
                         </div>
                     </form>
                 </div>
